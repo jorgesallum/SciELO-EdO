@@ -1,10 +1,10 @@
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 
-set :stages, ["staging", "sales", "sletras", "production", "tipostaging", "dt"]
+set :stages, ["production"]
 set :default_stage, "staging"
 
-set :application, "Livro da Classe"
+set :application, "EDO"
 
 set :scm, :git
 set :repository,  "https://github.com/hedra-digital/livro-da-classe.git"
