@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <%= current_user.email %></a>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <span class="label label-danger">Sair</span>
+  <% end %>
+<% end %>
