@@ -1,8 +1,14 @@
 rails 4.2
+
 ruby 2.3.3
 
+
 cp config/database.sample.yml config/database.yml
+
 bundle install
+
 rake db:create
+
 rake db:migrate
+
 rails s -b 0.0.0.0
