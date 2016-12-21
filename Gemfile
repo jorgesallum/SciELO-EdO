@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+gem 'devise', '4.2.0'
 gem 'mysql2', '0.4.5'
 gem 'puma', '3.6.2'
 gem 'rails_admin', '1.1.0'
