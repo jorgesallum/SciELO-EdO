@@ -13,6 +13,11 @@
   
 [Start]
   rails s -b 0.0.0.0
+
+[URL]
+  http://localhost:300
+  
+  [admin] http://localhost:3000/admin
   
 [MailCatcher]
   mailcather --ip=0.0.0.0
