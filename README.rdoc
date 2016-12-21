@@ -1,16 +1,17 @@
 {<img src="https://codeclimate.com/github/jorgesallum/SciELO-EdO/badges/gpa.svg" />}[https://codeclimate.com/github/jorgesallum/SciELO-EdO]
 
-rails 4.2
+[Config]
+  rails 4.2
+  ruby 2.3.3
 
-ruby 2.3.3
-
-
-cp config/database.sample.yml config/database.yml
-
-bundle install
-
-rake db:create
-
-rake db:migrate
-
-rails s -b 0.0.0.0
+[Setup]
+  1. cp config/database.sample.yml config/database.yml
+  2. bundle install
+  3. rake db:create
+  4. rake db:migrate
+  
+[Start]
+  rails s -b 0.0.0.0
+  
+[MailCatcher]
+  mailcather --ip=0.0.0.0
