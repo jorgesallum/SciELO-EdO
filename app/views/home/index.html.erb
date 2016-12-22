@@ -1,5 +1,7 @@
 <% if user_signed_in? %>
-   Conectado 
+  <% Project.where(user: current_user).each do |project| %>
+    <%= project %>
+  <% end %>
 <% else %>
     <%= link_to "Efetuar Login", new_user_session_path, method: :get %>
 <% end %>
