@@ -1,6 +1,7 @@
 <% if user_signed_in? %>
+  <%= button_to 'Project', controller: 'projects', action: 'create', method: :post%>
   <% Project.where(user: current_user).each do |project| %>
-    <%= project %>
+    <li><%= project %> <%= link_to 'Remover', project_path(project.id), method: :delete %></li>
   <% end %>
 <% else %>
     <%= link_to "Efetuar Login", new_user_session_path, method: :get %>
