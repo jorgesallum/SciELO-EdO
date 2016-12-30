@@ -4,11 +4,7 @@ class Project < ActiveRecord::Base
   validates   :user,  presence: true
 
   belongs_to  :user
-<<<<<<< HEAD
   belongs_to  :book, dependent: :destroy
-=======
-  belongs_to  :book
->>>>>>> master
 
   private
   def create_book
