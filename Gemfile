@@ -13,6 +13,7 @@ gem 'devise', '4.2.0'
 gem 'mysql2', '0.4.5'
 gem 'puma', '3.6.2'
 gem 'rails_admin', '1.1.0'
+gem 'hgdoc', '0.0.1', :git => 'https://github.com/pauloabner/hgdoc.git'
 
 group :development, :test do
   gem 'byebug'
