@@ -2,7 +2,13 @@
   <%= button_to 'Project', projects_path, class: 'btn btn-primary' %>
   <ul>
   <% Project.where(user: current_user).each do |project| %>
-    <li><%= project %> <%= link_to 'Remover', project_path(project.id), method: :delete, class: 'btn btn-danger'%></li>
+    <li>
+      <%= project %> <%= link_to 'Remover', project_path(project.id), method: :delete, class: 'btn btn-danger'%>
+      <%= form_tag(projects_file_upload_path(project.id), multipart: true) do %>
+        <%= file_field_tag 'document' %>
+        <%= submit_tag %>
+      <% end %>
+    </li>
   <% end %>
   </ul>
 <% else %>

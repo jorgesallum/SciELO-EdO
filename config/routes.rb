@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   
   root to: "home#index"
   resources :projects
+  post 'projects/:id/file_upload', to: 'projects#upload', as: 'projects_file_upload'
 end
